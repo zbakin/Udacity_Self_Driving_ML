@@ -6,19 +6,27 @@ The aim of the project is, provided waymo dataset with images of urban environme
 containing cars, pedestrians and cyclists, to train and validate the CNN model.
 
 ## Environment set up
-Udacity Workspace environment was used to complete the full project.
+Initial project code was taken from:
+https://github.com/udacity/nd013-c1-vision-starter.git
 
-### Dataset
-#### Dataset analysis
+### Prerequisites
+#### Udacity Workspace
+Udacity Workspace environment was used to complete the full project.
+#### Docker
+Another option is to set up a docker environment with the Dockerfile provided.
+For that you would need Ubuntu 20.04 and all dependancies installed.
+
+## Dataset
+### Dataset analysis
 There are 100 .tfrecord files downloaded for this project from waymo dataset. 
 They are split into 77 for training and 20 for evaluation and 3 for testing.
 Each tf file holds at minimum image, bounding boxes and classes information.
 
-#### Cross validation
+### Cross validation
 
 
-### Training
-#### Reference experiment
+## Training
+### Reference experiment
 Training starts with running model_main_tf2.py script.
 The command used for training:
 ```
@@ -34,7 +42,7 @@ To monitor the training, you can launch a tensorboard instance by running `pytho
 Results:
 
 
-#### Improve on the reference - add augmentations
+### Improve on the reference - add augmentations
 The command used for training:
 ```
 python experiments/model_main_tf2.py --model_dir=experiments/<experiment_name> --pipeline_config_path=experiments/<experiment_name>/pipeline_new.config
