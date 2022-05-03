@@ -42,7 +42,23 @@ python experiments/model_main_tf2.py --model_dir=experiments/reference/ --pipeli
 
 To monitor the training, you can launch a tensorboard instance by running `python -m tensorboard.main --logdir experiments/reference/`
 
-Results:
+#### Results
+
+| ![alt text](https://github.com/zbakin/Udacity_Self_Driving_ML/blob/main/experiments/reference/images/precision.png) | 
+|:--:| 
+| *Precision* |
+
+| ![alt text](https://github.com/zbakin/Udacity_Self_Driving_ML/blob/main/experiments/reference/images/recall.png) | 
+|:--:| 
+| *Recall* |
+
+| ![alt text](https://github.com/zbakin/Udacity_Self_Driving_ML/blob/main/experiments/reference/images/loss.png) | 
+|:--:| 
+| *Loss* |
+
+| ![alt text](https://github.com/zbakin/Udacity_Self_Driving_ML/blob/main/experiments/reference/images/learning%20rate.png) | 
+|:--:| 
+| *Learning Rate* |
 
 
 ### Improve on the reference - add augmentations and update optimiser
@@ -65,7 +81,25 @@ Augmentations used:
 Optimiser:
    1. Changed to adam_optimizer
    2. Learning rate changed to - manual_step_learning_rate
-![alt text]()
+
+#### Results
+
+
+| ![alt text](https://github.com/zbakin/Udacity_Self_Driving_ML/blob/main/experiments/optimisations/images/precision.png) | 
+|:--:| 
+| *Precision* |
+
+| ![alt text](https://github.com/zbakin/Udacity_Self_Driving_ML/blob/main/experiments/optimisations/images/recall.png) | 
+|:--:| 
+| *Recall* |
+
+| ![alt text](https://github.com/zbakin/Udacity_Self_Driving_ML/blob/main/experiments/optimisations/images/loss.png) | 
+|:--:| 
+| *Loss* |
+
+| ![alt text](https://github.com/zbakin/Udacity_Self_Driving_ML/blob/main/experiments/optimisations/images/learning%20rate.png) | 
+|:--:| 
+| *Learning Rate* |
 
 
 The command used for training:
@@ -77,10 +111,9 @@ The command used for validation:
 python experiments/model_main_tf2.py --model_dir=experiments/<experiment_name>/ --pipeline_config_path=experiments/<experiment_name>/pipeline_new.config --checkpoint_dir=experiments/<experiment_name>
 ```
 
-Results:
-
 Reference to other augmentations:
 https://github.com/tensorflow/models/blob/master/research/object_detection/protos/preprocessor.proto
 
-![alt text](https://github.com/zbakin/Udacity_Self_Driving_ML/blob/main/images/augmentations1.png)
+It was not possible to upload the whole animation. For that reason, I extracted frames on an animation and put them in here:
+[animation frames](https://github.com/zbakin/Udacity_Self_Driving_ML/tree/main/experiments/optimisations/animation_frames)
 
