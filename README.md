@@ -45,7 +45,29 @@ To monitor the training, you can launch a tensorboard instance by running `pytho
 Results:
 
 
-### Improve on the reference - add augmentations
+### Improve on the reference - add augmentations and update optimiser
+#### Config file was updated: [pipeline_v2.config](https://github.com/zbakin/Udacity_Self_Driving_ML/blob/main/experiments/optimisations/pipeline_v2.config)
+
+By experimenting with the model and it's losses, figured out that following improvements make huge impact on accuracy and precision of the model.
+Augmentations used:
+| ![alt text](https://github.com/zbakin/Udacity_Self_Driving_ML/blob/main/images/augmentations2.png) | 
+|:--:| 
+| *random_adjust_brightness* |
+
+| ![alt text](https://github.com/zbakin/Udacity_Self_Driving_ML/blob/main/images/augmentations1.png) | 
+|:--:| 
+| *random_rgb_to_gray* |
+
+| ![alt text](https://github.com/zbakin/Udacity_Self_Driving_ML/blob/main/images/augmentations3.png) | 
+|:--:| 
+| *random_adjust_contrast* |
+
+Optimiser:
+   1. Changed to adam_optimizer
+   2. Learning rate changed to - manual_step_learning_rate
+![alt text]()
+
+
 The command used for training:
 ```
 python experiments/model_main_tf2.py --model_dir=experiments/<experiment_name> --pipeline_config_path=experiments/<experiment_name>/pipeline_new.config
