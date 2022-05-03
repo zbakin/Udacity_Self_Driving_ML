@@ -23,7 +23,10 @@ They are split into 77 for training and 20 for evaluation and 3 for testing.
 Each tf file holds at minimum image, bounding boxes and classes information.
 
 ### Cross validation
-
+The recommended way to split the dataset is:
+Training: 77%
+Validation: 20%
+Testing: 3%
 
 ## Training
 ### Reference experiment
@@ -53,6 +56,9 @@ python experiments/model_main_tf2.py --model_dir=experiments/<experiment_name>/ 
 ```
 
 Results:
+
+Reference to other augmentations:
+https://github.com/tensorflow/models/blob/master/research/object_detection/protos/preprocessor.proto
 
 
 
