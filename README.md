@@ -60,5 +60,5 @@ Results:
 Reference to other augmentations:
 https://github.com/tensorflow/models/blob/master/research/object_detection/protos/preprocessor.proto
 
-
+![alt text](https://github.com/zbakin/Udacity_Self_Driving_ML/blob/main/images/augmentations1.png)
 
