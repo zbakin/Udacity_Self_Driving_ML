@@ -124,6 +124,12 @@ python experiments/model_main_tf2.py --model_dir=experiments/<experiment_name>/ 
 Reference to other augmentations:
 https://github.com/tensorflow/models/blob/master/research/object_detection/protos/preprocessor.proto
 
-It was not possible to upload the whole animation. For that reason, I extracted frames on an animation and put them in here:
-[animation frames](https://github.com/zbakin/Udacity_Self_Driving_ML/tree/main/experiments/optimisations/animation_frames)
+It was not possible to upload the whole animation. However, these are screenshots of 2 different animations that were generated with inference_video.py.
 
+| ![alt text](https://github.com/zbakin/Udacity_Self_Driving_ML/blob/main/experiments/optimisations/images/animation1.png) | 
+|:--:| 
+| *Animation 1* |
+
+| ![alt text](https://github.com/zbakin/Udacity_Self_Driving_ML/blob/main/experiments/optimisations/images/animation2.png) | 
+|:--:| 
+| *Animation 2* |
