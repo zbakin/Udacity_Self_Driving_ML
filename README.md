@@ -18,15 +18,19 @@ For that you would need Ubuntu 20.04 and all dependancies installed.
 
 ## Dataset
 ### Dataset analysis
+Data used in this project, was taken from [waymo](https://waymo.com/open/) dataset. Data is stored in multiple tensorflow record files.
+.tfrecord files are good when storing a large amount data, and improve efficiency when accessing the files.
+
 There are 100 .tfrecord files downloaded for this project from waymo dataset. 
 They are split into 77 for training and 20 for evaluation and 3 for testing.
 Each tf file holds at minimum image, bounding boxes and classes information.
 
 ### Cross validation
+
+Cross validation is a set of techniques to evaluate the capacity of our model to generalize and alleviate the overfitting challenges. In this course, we will leverage the validation set approach, where we split the available data into two splits:
 The recommended way to split the dataset is:
-Training: 77%
-Validation: 20%
-Testing: 3%
+Training: 80% (77 tfrecords)
+Validation: 20% (20 tfrecords)
 
 ## Training
 ### Reference experiment
@@ -63,6 +67,12 @@ To monitor the training, you can launch a tensorboard instance by running `pytho
 
 ### Improve on the reference - add augmentations and update optimiser
 #### Config file was updated: [pipeline_v2.config](https://github.com/zbakin/Udacity_Self_Driving_ML/blob/main/experiments/optimisations/pipeline_v2.config)
+
+When building a ML algorithm, the idea is to create a model which would be suited for real world task.
+Due to this, it's vital to have a wide dataset which includes the images from different environment scenarious. 
+Such scenarious vary with weather conditions, day time, night time, season of the year.
+Therefore, there is technique, where one applies augmentation on image data, to simulate those environments in our training dataset.
+This way, the model will generalise well and will not overfit. 
 
 By experimenting with the model and it's losses, figured out that following improvements make huge impact on accuracy and precision of the model.
 Augmentations used:
