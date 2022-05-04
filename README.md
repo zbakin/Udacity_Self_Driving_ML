@@ -33,7 +33,27 @@ Observations:
     3. Most of them have clear weather conditions - high visibility. 
     4. Most of them are clear images with no marks or blur. Only a few has rain or unclear parts.
     5. Images include mostly vehicles or various types, pedestrians, and in rare cases bicycles/motobikes.
-    
+  
+| ![alt text](https://github.com/zbakin/Udacity_Self_Driving_ML/blob/main/images/explore1.png) | 
+|:--:| 
+| *Example 1 - pedestrians and vehicles, day time* |
+
+
+| ![alt text](https://github.com/zbakin/Udacity_Self_Driving_ML/blob/main/images/explore2.png) | 
+|:--:| 
+| *Example 2 - vehicles, day time* |
+
+
+| ![alt text](https://github.com/zbakin/Udacity_Self_Driving_ML/blob/main/images/explore5.png) | 
+|:--:| 
+| *Example 3 - night time* |
+ 
+ 
+By analysing the data in more detail, it can be identified quantitatively and visually the distribution of class elements(vehicles, pedestrians, cyclists) in the dataset.
+ 
+| ![alt text](https://github.com/zbakin/Udacity_Self_Driving_ML/blob/main/images/histogram%20of%20classes.png) | 
+|:--:| 
+| *Histogram of Data Distribution* |
     
 ### Cross validation
 
