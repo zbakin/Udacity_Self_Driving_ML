@@ -63,6 +63,9 @@ Training: 80% (77 tfrecords)
 Validation: 20% (20 tfrecords)
 
 ## Training
+
+In this project SSD(Single-shot detector) model was used. Single-stage architectures such as SSD are good for automotive applications, because they provide higher frame rate than other architectures. They have a good balance between frame rate and mAP performance.
+More information about SSD model: [SSD model](https://jonathan-hui.medium.com/ssd-object-detection-single-shot-multibox-detector-for-real-time-processing-9bd8deac0e06)
 ### Reference experiment
 Training starts with running model_main_tf2.py script.
 The command used for training:
@@ -141,6 +144,12 @@ Optimiser:
 |:--:| 
 | *Learning Rate* |
 
+#### Observations from graphs
+
+From both 'reference' and 'optimisations' parts of the project it can be noticed that loss is decreasing on training and validation procedures.
+Validation set is decreasing at roughly the same rate as during training. However, validation loss is higher, because the model is being trained only on training data.
+Due to the fact that validation set is does not start to increase with time, it means, that model is not overfitting and that it generalises well.
+Ideally, it would be good to train the data for more iterations as the training has not reached the plateau.
 
 The command used for training:
 ```
