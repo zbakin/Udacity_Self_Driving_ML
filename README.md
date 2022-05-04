@@ -25,6 +25,16 @@ There are 100 .tfrecord files downloaded for this project from waymo dataset.
 They are split into 77 for training and 20 for evaluation and 3 for testing.
 Each tf file holds at minimum image, bounding boxes and classes information.
 
+#### Exploratory Data Analysis
+By following Exploratory Data Analysis notebook, it is possible to visualise and observe the dataset.
+Observations:
+    1. Most of the images are recorded during the day time, with bright sun. That means the brightness of most images is relatively high. There is approximately 1 in 10 images where it is night time. 
+    2. Most of the them are taken during at urban areas - cities, towns, suburbs, living areas. 
+    3. Most of them have clear weather conditions - high visibility. 
+    4. Most of them are clear images with no marks or blur. Only a few has rain or unclear parts.
+    5. Images include mostly vehicles or various types, pedestrians, and in rare cases bicycles/motobikes.
+    
+    
 ### Cross validation
 
 Cross validation is a set of techniques to evaluate the capacity of our model to generalize and alleviate the overfitting challenges. In this course, we will leverage the validation set approach, where we split the available data into two splits:
